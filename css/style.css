@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700;1,800;1,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@media only screen and (min-width: 375px){
+.col-sm-4 {
+    
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+/* .section2{
+    width: 1444px;
+} */
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-image: linear-gradient(hsl(214, 47%, 52%),hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.head{
+    border:2px solid rgb(230, 224, 224);
+    border-radius: 10px;
+}
+.triangle{
+    /* position: relative; */
+    z-index: 1;
+}
+.hand{
+    /* position: absolute; */
+    z-index: 1;
+    /* top:190px;
+    left: 800px; */
+    background-color: aliceblue;
+    border:15px solid rgb(88, 46, 240);
+    
+    
+}
+.fingers{
+    /* position: absolute; */
+    z-index: 2;
+    /* top:190px;
+    left: 1040px; */
+    background-color: aliceblue;
+    border:15px solid rgb(237, 240, 46);
+}
+.wrist{
+    /* position: absolute; */
+    z-index: 4;
+    /* top:430px;
+    left:910px; */
+    background-color: aliceblue;
+    border:15px solid rgb(240, 107, 46);
+}
+.button-img{
+    background: transparent;
+    border: none;
+}
+.button-img:hover{
+    /* box-shadow: 2px 2px 2px 2px rgb(109, 108, 108); */
+    /* background-color: rgba(0, 0, 0, 0.3);  */
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+  transform: scale(1.2, 1.2);
+    
+
+}
+
+ 
+.score-design{
+    display: inline-block;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+.play-again{
+   color:rgb(224, 43, 103);
+   background-color: antiquewhite; 
+   visibility: hidden;
+}
+.start{
+    background: transparent;
+box-shadow: 0px 0px 0px transparent;
+border: 0px solid transparent;
+text-shadow: 0px 0px 0px transparent;
+color: azure;
+font-weight: 700;
+font-size: xx-large;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/fontawesome.min.js" integrity="sha512-i3N2a3sMtKOQHXCJF3qEpce5twcGN9mRsWQe6PUTf9WS/eG5XkivI97uxit7B2nRGz5XuoszBaqndSqxdeVfag==" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  
+  <title>Skill Safari | Rock Paper Scissors</title></head>
+  <body >
+    <div class="container head mt-5 p-2 ">
+      <div class="row">
+     
+        <div class="col-md-4 col-sm-4 mt-2 col-sm-6 text-left"><img src="./img/logo.svg" alt=""></div>
+        <div class="col-md-4 col-sm-4 text-center pt-4 " ><button onclick="start()" class="start">Start the game</button></div>
+        <div class="col-md-4 col-sm-4 mt-2 col-sm-6  pl-5 text-center "><div class="score-design text-center"><span class="text-center">score</span><br><h1 id="score" class="px-3 " style="font-weight:600">0</h1></div>
+      </div></div>
+    </div>
+    <section class="mt-5 " id="sections" >
+      <div class="container " id="main-container" >
+        <!-- <img src="/img/bg-triangle.svg" alt="" class="d-flex mx-auto"> -->
+        <div class="row d-flex justify-content-center align-items-center "  >
+          <div class="col-md-4 col-sm-4 d-flex justify-content-center align-items-center mt-5 " id="you-img">
+            <button class="button-img"id="paper" ><img  src="./img/icon-paper.svg" alt="paper-icon" class="hand rounded-circle p-3"  ></button>
+            
+          </div>
+          <div class="col-md-4 col-sm-4 d-flex justify-content-center align-items-center mt-5">
+            <button class="button-img" id="scissor" ><img  src="./img/icon-scissors.svg" alt="scissor-icon" class="fingers rounded-circle p-3"></button>
+            <h2 id="computer"></h2>
+          </div>
+        </div>
+        <div class="row rock d-flex justify-content-center align-items-center mt-5">
+          <div class="col-md-4 col-sm-4 d-flex justify-content-center align-items-center ">
+            <button class="button-img" id="rock"><img  src="./img/icon-rock.svg" alt="rock-icon" class="wrist rounded-circle p-3"></button>
+          </div>
+        </div>
+        </div>
+        
+        </div> 
+      </div>
+    </section>
+    <div  class=" container p-3 text-white" id="selection">
+      <div class="row">
+      <div class="col-md-4 col-sm-4 text-center p-3" id="heading"></div>
+      <div class="col-md-4 col-sm-4 mt-5 text-center p-3" id="heading3">
+        <button class="play-again p-3" id="play-button"></button>
+      </div>
+      <div class="col-md-4 col-sm-4 text-center p-3" id=heading2></div>
+      
+
+      </div></div>
+    <section>
+      <div class="container">
+        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModalCenter">
+          Rules
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Rules</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="./img/image-rules.svg" alt="" >
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    
+
+        </button>
+      </div>
+    </section>
+    
+    </div>
+    
+    
+
+
+    
+ 
+  <script src="./js/script.js"></script>
+</body>
+</html>
